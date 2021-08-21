@@ -86,11 +86,16 @@ function appendDiv() {
 
   ob.style.marginLeft = mar2 + "%";
   setTimeout(moveDown, 100, ob);
-  ob.onclick = () => {
+
+  const fn = () => {
     ob.style.opacity = 0.3;
     score++;
     sco.innerText = score;
   };
+
+  ob.ontouchstart = fn;
+  ob.onclick = fn
+
   if (score >= 70 && score < 150) step = 1;
   document.getElementById("tiles").prepend(ob);
 }

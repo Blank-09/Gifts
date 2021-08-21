@@ -5,6 +5,7 @@
   height: 100%;
   font-family: "Roboto", sans-serif;
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 button,
@@ -110,7 +111,7 @@ img {
 
 .move {
   transform: translateY(145vh);
-  transition: transform linear 1.5s;
+  transition: transform linear 1.7s;
 }
 
 .result_box {
