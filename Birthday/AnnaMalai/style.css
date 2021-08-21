@@ -81,7 +81,7 @@ img {
 #game .score p {
   font-size: 40px;
   width: auto;
-  color: #007bff;
+  color: red;
   z-index: 5;
 }
 
