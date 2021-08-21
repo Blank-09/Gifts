@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="application-name" content="Happy Birthday AnnaMalai!" />
+    <meta
+      name="description"
+      content="A mini-game for you by Priyanshu. Make sure to play it!"
+    />
+    <meta itemprop="application-name" content="Happy Birthday AnnaMalai!" />
+    <meta
+      itemprop="description"
+      content="A mini-game for you by Priyanshu. Make sure to play it!"
+    />
+    <meta
+      itemprop="image"
+      content="https://i.pinimg.com/564x/61/b3/aa/61b3aa0c8fac8e508dcada72f7f41840.jpg"
+    />
+    <meta name="author" content="Priyanshu" />
+    <title>Happy b'day Anna Malai</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body oncontextmenu="return false">
+    <img src="./res/background.jpg" />
+    <div class="start">
+      <button>Play</button>
+    </div>
+
+    <div id="game" style="display: none">
+      <div id="game-container">
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line" id="line3"></div>
+        <div class="line" id="line4"></div>
+      </div>
+      <div class="tiles" id="tiles"></div>
+      <div class="score">
+        <p id="score">0</p>
+      </div>
+    </div>
+    <div class="result_box">
+      <div class="icon">
+        <i class="fas fa-gift"></i>
+      </div>
+      <div class="complete_text">
+        <p style="font-size: calc(1vw + 20px)" id="result_txt">Try Again! Score 75 pts</p>
+        <p style="font-size: 23px" id="result_txt2">To get the reward</p>
+      </div>
+      <br />
+      <div class="buttons">
+        <button class="restart">Replay</button>
+      </div>
+    </div>
+    <audio
+      id="audio"
+      src="./res/THE BEST Happy Birthday Background Music  Birthday Music Instrumental No Copyright.m4a"
+      style="display: none"
+    ></audio>
+    <audio
+      id="play"
+      src="https://drive.google.com/uc?id=16ZqyQo4C59nUeXcP7H7L7XzUwrI7f3bW"
+      style="display: none"
+    ></audio>
+    <audio
+      id="out"
+      src="https://drive.google.com/uc?id=1OtAEm0PY38LdtKPBRe_ucoysYkAY7cG2"
+      style="display: none"
+    ></audio>
+    <audio
+      id="result"
+      src="https://drive.google.com/uc?id=1GvdIT1VsX48R9emQHCWxs4KP-hEQxeal"
+      style="display: none"
+    ></audio>
+    <!-- partial -->
+    <script src="./script.js"></script>
+  </body>
+</html>
