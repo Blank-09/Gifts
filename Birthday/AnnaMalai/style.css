@@ -111,7 +111,7 @@ img {
 
 .move {
   transform: translateY(145vh);
-  transition: transform linear 1.6s;
+  transition: transform linear 1.5s;
 }
 
 .result_box {
