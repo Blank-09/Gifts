@@ -94,7 +94,6 @@ function appendDiv() {
   };
 
   ob.ontouchstart = fn;
-  ob.onclick = fn
 
   if (score >= 70 && score < 150) step = 1;
   document.getElementById("tiles").prepend(ob);
