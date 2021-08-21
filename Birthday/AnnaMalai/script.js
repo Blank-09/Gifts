@@ -67,13 +67,10 @@ function out() {
   audio.pause();
   outs.play();
   setTimeout(viewResult, 1500);
-}
-
-function win() {
-  audio.pause();
-  setTimeout(viewResult, 1500);
-  result_txt[0].innerText = "Happy Birthday!";
-  result_txt[1].innerText = birthdayBoyGirl;
+  if (score >= 100) {
+    result_txt[0].innerText = "Happy Birthday!";
+    result_txt[1].innerText = birthdayBoyGirl;
+  }
 }
 
 function appendDiv() {
@@ -82,9 +79,8 @@ function appendDiv() {
   do {
     mar2 = randomMargin();
   } while (mar == mar2);
-  {
-    mar = mar2;
-  }
+
+  mar = mar2;
 
   ob.src = `./res/(${Math.floor(Math.random() * noOfPic) + 1}).jpeg`;
 
@@ -121,10 +117,6 @@ function removeDiv(e) {
     console.log("Not touched!");
     clearInterval(a);
     out();
-  }
-  if (score == 75) {
-    clearInterval(a);
-    win();
   }
   e.remove();
 }
